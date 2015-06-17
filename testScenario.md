@@ -12,11 +12,10 @@ This is a sequence of steps used to check if everything works as it was supposed
 4. Execute makeCacheMatrix over the sample matrix:
 ```aaa <- makeCacheMatrix(myMatrix)```
 
-5. Check if aaa object contains our matrix right:
-(don't forget the brackets)
+5. Check if aaa object contains our matrix right (don't forget the brackets):
 ```aaa$get()```
 
-expected result:'''
+expected result:
      [,1] [,2] [,3]
 [1,]    7    2    1
 [2,]    0    3   -1
