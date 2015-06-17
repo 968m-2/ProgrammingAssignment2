@@ -13,49 +13,57 @@ This is a sequence of steps used to check if everything works as it was supposed
 ```aaa <- makeCacheMatrix(myMatrix)```
 
 5. Check if aaa object contains our matrix right (don't forget the brackets):
-`aaa%$get()
+`aaa%$get()`
 
 expected result:
+```
      [,1] [,2] [,3]
 [1,]    7    2    1
 [2,]    0    3   -1
-[3,]   -3    4   -2`
+[3,]   -3    4   -2
+```
 
 6. Check the cached inverted matrix:
-```aaa$getInvMatrix()```
+`aaa$getInvMatrix()`
 
 expected result:
-```NULL```
+`NULL`
 
 7. Calculate inverted matrix for our sample and store it to cache:
-```cacheSolve(aaa)```
+`cacheSolve(aaa)`
 
 expected output:
-```     [,1] [,2] [,3]
+```
+     [,1] [,2] [,3]
 [1,]   -2    8   -5
 [2,]    3  -11    7
-[3,]    9  -34   21```
+[3,]    9  -34   21
+```
 
 8. Check if it is really cached:
-```aaa$getInvMatrix()```
+`aaa$getInvMatrix()`
 
 expected output:
-```     [,1] [,2] [,3]
+```
+     [,1] [,2] [,3]
 [1,]   -2    8   -5
 [2,]    3  -11    7
-[3,]    9  -34   21```
+[3,]    9  -34   21
+```
 
 9. Check if changing the sample matrix clears the cache.
 To be simple, let's set the source matrix as 1x1 matrix of just 1 element "1":
-```aaa$set(1)
-aaa$get()```
-expected output:
-```[1] 1```
+`aaa$set(1)`
+`aaa$get()`
 
-```aaa$getInvMatrix()```
 expected output:
-```NULL```
+`[1] 1`
 
-That's it.
+`aaa$getInvMatrix()`
+
+expected output:
+`NULL`
+
+That's it, have a good day.
 
 Glory to Ukraine.
