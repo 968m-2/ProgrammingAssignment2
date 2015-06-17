@@ -9,10 +9,10 @@ This is a sequence of steps used to check if everything works as it was supposed
 * Create a square invertable matrix, for example:
 ```myMatrix <- matrix(c(7,0,-3,2,3,4,1,-1,-2), nrow=3, ncol=3)```
 
-* Execute makeCacheMatrix over the sample matrix:
+* Execute *makeCacheMatrix* over the sample matrix, and assign a variable *aaa* to resulting object:
 ```aaa <- makeCacheMatrix(myMatrix)```
 
-* Check if aaa object contains our matrix right (don't forget the brackets):
+* Check if *aaa* object contains our matrix right (don't forget the brackets):
 `aaa$get()`
 
 expected result:
@@ -52,7 +52,7 @@ expected output:
 ```
 
 * Check if changing the sample matrix clears the cache.
-To be simple, let's set the source matrix as 1x1 matrix of just 1 element "1":
+To be simple, let's set the source matrix as 1x1 matrix of just one element "1":
 `aaa$set(1)`
  
 `aaa$get()`
@@ -67,6 +67,6 @@ Then we go:
 expected output:
 `NULL`
 
-That's it, have a good day.
+That's it, stay strong, have a good day.
 
 Glory to Ukraine.
