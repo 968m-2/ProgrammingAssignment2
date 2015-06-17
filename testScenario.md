@@ -13,7 +13,7 @@ This is a sequence of steps used to check if everything works as it was supposed
 ```aaa <- makeCacheMatrix(myMatrix)```
 
 5. Check if aaa object contains our matrix right (don't forget the brackets):
-```aaa\$get()```
+```aaa%$get()```
 
 expected result:```
      [,1] [,2] [,3]
