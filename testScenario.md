@@ -13,14 +13,14 @@ This is a sequence of steps used to check if everything works as it was supposed
 ```aaa <- makeCacheMatrix(myMatrix)```
 
 5. Check if aaa object contains our matrix right (don't forget the brackets):
-```aaa$get()```
+```aaa\$get()```
 
-expected result:
+expected result:```
      [,1] [,2] [,3]
 [1,]    7    2    1
 [2,]    0    3   -1
 [3,]   -3    4   -2
-'''
+```
 
 6. Check the cached inverted matrix:
 ```aaa$getInvMatrix()```
